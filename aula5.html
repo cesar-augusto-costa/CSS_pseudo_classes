@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Pseudo Classes - Aula 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+    body{
+        margin-top: 100px;
+    }
+    .my-div{
+        font-family: 'Roboto';
+        font-size: 14px;
+    }
+
+    /* Citação */
+    .my-div::before{
+        content: "“";
+        color: #f00;
+        font-size: 25px;
+    }
+    .my-div::after{
+        content: "”";
+        color: green;
+        font-size: 25px;
+    }
+
+
+    .breadcrumbs{
+        font-size: 14px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .breadcrumbs li{
+        display: inline;
+    }
+
+    .breadcrumbs li::after{
+        content: ">";
+        padding: 0 5px;
+    }
+    .breadcrumbs li:last-child::after{
+        display: none;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <div class="my-div">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid temporibus totam distinctio fugit autem dolores molestias sunt quas! Omnis accusamus eum quae delectus blanditiis ab laudantium voluptate. Autem, commodi quos.
+    </div>
+    <br><br>
+    <ul class="breadcrumbs">
+        <li>Home</li>
+        <li>Produtos</li>
+        <li>Playstation 4</li>
+    </ul>
+</body>
+</html>

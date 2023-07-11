@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Pseudo Classes - Aula 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+    body{
+        margin-top: 100px;
+    }
+    .my-link{
+        font-family: 'Roboto';
+        color: black;
+    }
+    /* Link não for visitado */
+    .my-link{
+        color: green;
+    }
+    /* Link visitado */
+    .my-link:visited{
+        color: red;
+    }
+    /* cursor passa por cima do link */
+    .my-link:hover{
+        color: orange;
+    }
+    /* foco */
+    .my-link:focus{
+        color: deepskyblue;
+    }
+    /* no click */
+    .my-link:active{
+        color: deeppink;
+    }
+    
+</style>
+
+</head>
+<body>
+    <a class="my-link" href="http://www.tiagomatos.com">
+        My link
+    </a>
+    
+</body>
+</html>
