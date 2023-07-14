@@ -8,65 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <style>
-        body{
-            margin-top: 100px;
-        }
-        .movies{
-            font-family: 'Roboto';
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .movies div{
-            color: #666;
-            border-bottom: 1px solid #eee;
-            margin-bottom: 5px;
-            padding-bottom: 5px;
-        }
-        /* nth-of-type() tem a função parecida */
-        .movies div:nth-child(1){
-            font-weight: bolder;
-        }
-        .movies div:nth-child(n){
-            background-color: #aeaeae;
-        }
-        /*
-        2n
-        2x1=2
-        2x2=4
-        */
-        .movies div:nth-child(2n){
-            background-color: lightgreen;
-        }
-        .movies div:nth-child(2n-1){
-            background-color: lightskyblue;
-        }
-        /* Linhas pares */
-        .movies div:nth-child(even){
-            color:darkgreen;
-        }
-        /* Linhas impares */
-        .movies div:nth-child(odd){
-            color:darkblue;
-        }
-        .movies div:nth-last-child(1){
-            font-style: italic;
-        }
-
-        /* nth-last-of-type() tem a função parecida */
-        .movies div:nth-last-child(2n){
-            border-radius: 10px;
-        }
-
-        .tv :nth-of-type(1){
-            background-color: lightgreen;
-        }
-        .tv :nth-last-of-type(1){
-            background-color: lightskyblue;
-        }
-    
-    </style>
+    <link rel="stylesheet" href="css/aula3.css">
 
 </head>
 
