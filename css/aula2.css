@@ -1,0 +1,22 @@
+
+body{
+    margin-top: 100px;
+}
+.movies{
+    font-family: 'Roboto';
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.movies li{
+    color: #666;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.movies li:first-child{
+    color: #000;
+}
+.movies li:last-child{
+    border: none;
+}

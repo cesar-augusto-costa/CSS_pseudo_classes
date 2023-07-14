@@ -1,0 +1,32 @@
+
+body{
+    margin-top: 100px;
+}
+.my-link{
+    font-family: 'Roboto';
+    color: black;
+}
+
+/* Link não for visitado */
+.my-link{
+    color: green;
+}
+/* Link visitado */
+.my-link:visited{
+    color: red;
+}
+
+/* cursor passa por cima do link */
+.my-link:hover{
+    color: orange;
+}
+
+/* foco */
+.my-link:focus{
+    color: deepskyblue;
+}
+
+/* no click */
+.my-link:active{
+    color: deeppink;
+}

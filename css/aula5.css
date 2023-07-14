@@ -1,0 +1,39 @@
+
+body{
+    margin-top: 100px;
+}
+.my-div{
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+/* Citação */
+.my-div::before{
+    content: "“";
+    color: #f00;
+    font-size: 25px;
+}
+.my-div::after{
+    content: "”";
+    color: green;
+    font-size: 25px;
+}
+
+
+.breadcrumbs{
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumbs li{
+    display: inline;
+}
+
+.breadcrumbs li::after{
+    content: ">";
+    padding: 0 5px;
+}
+.breadcrumbs li:last-child::after{
+    display: none;
+}
